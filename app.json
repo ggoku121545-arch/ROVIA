@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "ROVIA",
+    "slug": "rovia",
+    "scheme": "rovia",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.ggoku121545.rovia"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ggoku121545.rovia"
+    },
+    "extra": {
+      "projectPhase": "V0.1"
+    }
+  }
+}
