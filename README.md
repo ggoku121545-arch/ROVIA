@@ -1,27 +1,26 @@
-# ROVIA
+# ROVIA (로비아)
 
-ROVIA (로비아) is a mobile-first, map-centered application for spontaneous travel, sharing local information and everyday experiences with other travelers.
+Mobile-first, map-centered travel and everyday-life sharing app. **V0.1 prototype**, built with React Native + Expo SDK 57.
 
-## Project identity
+## Current features
+- Minimal home with a map entry point and left-swipe gesture
+- Google Maps on Android through `react-native-maps` in Expo Go
+- Tap the map to place temporary pins; tap a marker callout to remove a pin
+- Pins are **session-only** and disappear when the app restarts
 
-- Product name: **ROVIA**
-- Working slug: `rovia`
-- Former working names: ROAMAP / ROMAP
-- Intended stack: React Native + Expo
-- Initial users: creator and a small testing group; potential growth to 10,000 registered users
+## Test on Android (Codespaces + Expo Go)
+1. Open this repository in GitHub Codespaces.
+2. Open the terminal in the repository root.
+3. Run `npm install`.
+4. Run `npx expo install --check` and `npm run check` to verify dependencies and TypeScript.
+5. Run `npx expo start --tunnel` (install tunnel helper if prompted).
+6. Open the tunnel's QR/link in SDK 57 compatible Expo Go on Android.
 
-## Development roadmap
+If `expo install --check` reports version mismatches, run `npx expo install --fix` and retest. Cloud tunneling may require network access and an active Codespace.
 
-1. V0.1 — mobile map view, navigation and pins (no sign-in or backend)
-2. V0.2 — private travel notes and photo records with local persistence
-3. V0.3 — accounts, backend and controlled sharing
-4. V1.0 — community feed, place discovery and moderation
+## Next milestones
+- V0.2: local persistence, notes/photos on pins
+- V0.3: accounts, opt-in sharing and backend
+- V1.0: community feed, place discovery and moderation
 
-## Development principles
-
-- Mobile-first; support testing from a phone.
-- Preserve working features and make small, testable changes.
-- Do not introduce authentication or a database into V0.1.
-- Branding and trademark clearance are separate future release decisions.
-
-> Repository rename from `ROMAP` to `ROVIA` is pending. This README does not rename the GitHub repository.
+No login, database, or API keys are included in V0.1. App store builds will need native map provider configuration. Branding/trademark clearance is a separate pre-release task.
